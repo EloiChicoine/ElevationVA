@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Nos Rôles - ELEVATION</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="src/assetes/icon1.png">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="src/assetes/third sky blue.svg" alt="ELEVATION">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="roles.html">Nos services</a></li>
+            <li><a href="about.html">Notre histoire</a></li>
+            <!-- <li><a href="blogs.html">Blog</a></li>-->
+        </ul>
+        <a href="Contact.html" class="btn btn-outline">Commencer</a>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+</header>
+
+<section class="roles-hero">
+    <div class="container">
+        <h1>Nous trouvons les meilleurs talents,<br>vous bâtissez le futur</h1>
+        <p>Grâce à notre expertise en recrutement, nous identifions et sélectionnons les candidats idéaux pour votre entreprise.</p>
+    </div>
+</section>
+
+<section class="roles-section">
+    <div class="container">
+        <div class="roles-grid">
+            <!-- Assistant Category -->
+            <div class="role-category">
+                <h2>Assistant</h2>
+                
+                <div class="role-item">
+                    <div class="role-header" onclick="toggleRole(this)">
+                        <span>Assistant exécutif</span>
+                        <div class="expand-btn">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="role-content">
+                        <p>Un Assistant Exécutif Est Un Partenaire Stratégique Qui Optimise La Productivité En Gérant Les Emplois Du Temps, Les Communications Et Les Tâches Administratives De Haut Niveau Avec Précision Et Discrétion.</p>
+                        <a href="#" class="btn btn-secondary">En savoir plus</a>
+                    </div>
+                </div>
+                
+                <div class="role-item">
+                    <div class="role-header" onclick="toggleRole(this)">
+                        <span>Assistant Virtuel</span>
+                        <div class="expand-btn">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="role-content">
+                        <p>Un Assistant Virtuel Est Un Professionnel Hautement Qualifié Qui Rationalise Les Opérations En Gérant Les Tâches Administratives, La Planification, Le Support Client, Et Bien Plus Encore, Permettant Ainsi Aux Propriétaires D'entreprise De Se Concentrer Sur La Croissance. Grâce À Des Compétences Exceptionnelles En Organisation Et En Communication, Il Améliore La Productivité, Gère Les Tâches Quotidiennes Sans Accroc Et S'adapte Rapidement Aux Besoins Dynamiques De L'entreprise.</p>
+                        <a href="#" class="btn btn-secondary">En savoir plus</a>
+                    </div>
+                </div>
+                
+                <div class="role-item">
+                    <div class="role-header" onclick="toggleRole(this)">
+                        <span>Assistant Administratif</span>
+                        <div class="expand-btn">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="role-content">
+                        <p>Un Assistant Administratif Est Un Professionnel Attentif Aux Détails Qui
+                            Rationalise Les Opérations De Bureau En Gérant Les Emplois Du Temps, En
+                            Coordonnant Les Communications Et En S’occupant Des Tâches Essentielles
+                            Avec Efficacité. <br>
+                            
+                            Son Adaptabilité Et Ses Compétences Organisationnelles Permettent Aux
+                            Entreprises De Fonctionner Sans Accroc, Permettant Ainsi Aux Équipes De Se
+                            Concentrer Sur Les Objectifs À Fort Impact.</p>
+                        <a href="#" class="btn btn-secondary">En savoir plus</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Support Client Category -->
+            <div class="role-category">
+                <h2>Support client</h2>
+                
+                <div class="role-item">
+                    <div class="role-header" onclick="toggleRole(this)">
+                        <span>Représentant service client</span>
+                        <div class="expand-btn">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="role-content">
+                        <p>Un Représentant du Service Client est la première ligne de toute entreprise, offrant un support en résolvant les demandes, en traitant les réclamations et en garantissant une expérience client positive. <br>
+                            Avec de solides compétences en communication et un esprit de résolution de problèmes, il établit la confiance, améliore la satisfaction client et favorise la fidélité à la marque.</p>
+                        <a href="#" class="btn btn-secondary">En savoir plus</a>
+                    </div>
+                </div>
+                
+                <div class="role-item">
+                    <div class="role-header" onclick="toggleRole(this)">
+                        <span>Responsable réussite client</span>
+                        <div class="expand-btn">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="role-content">
+                        <p>Un Responsable de la Réussite Client établit des relations solides et s’assure que les clients atteignent leurs objectifs grâce à un support proactif et des conseils stratégiques. <br>
+                            Avec une expertise en intégration, fidélisation et développement des comptes, il favorise la satisfaction à long terme et maximise la valeur à vie du client.</p>
+                        <a href="#" class="btn btn-secondary">En savoir plus</a>
+                    </div>
+                </div>
+                
+                <div class="role-item">
+                    <div class="role-header" onclick="toggleRole(this)">
+                        <span>Spécialiste support technique</span>
+                        <div class="expand-btn">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="role-content">
+                        <p>Un Spécialiste du Support Technique résout les problèmes techniques complexes avec rapidité et expertise, garantissant une expérience utilisateur fluide. <br>
+                            Avec de solides compétences en résolution de problèmes et une connaissance approfondie des produits, il fournit un support de premier ordre qui améliore la satisfaction et la fidélisation des clients.</p>
+                        <a href="#" class="btn btn-secondary">En savoir plus</a>
+                    </div>
+                </div>
+                
+                <div class="role-item">
+                    <div class="role-header" onclick="toggleRole(this)">
+                        <span>Spécialiste d'intégration</span>
+                        <div class="expand-btn">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="role-content">
+                        <p>Un Spécialiste de l’Intégration assure une transition fluide et engageante pour les nouveaux clients ou employés en fournissant des conseils, des formations et un support. <br>
+                            Avec une expertise en optimisation des processus et gestion des relations, il pose les bases du succès et de la satisfaction à long terme.</p>
+                        <a href="#" class="btn btn-secondary">En savoir plus</a>
+                    </div>
+                </div>
+                
+                <div class="role-item">
+                    <div class="role-header" onclick="toggleRole(this)">
+                        <span>Spécialiste fidélité client</span>
+                        <div class="expand-btn">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="role-content">
+                        <p>Un Spécialiste de la Fidélité et des Récompenses conçoit et gère des programmes qui augmentent l’engagement des clients, la fidélisation et la valeur à vie. <br>
+
+                            Avec une expertise en analyse de données, en incitations et en expérience de marque, il crée des stratégies qui transforment les clients en défenseurs à vie.</p>
+                        <a href="#" class="btn btn-secondary">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Créatif Category -->
+            <div class="role-category">
+                <h2>Créatif</h2>
+                
+                <div class="role-item">
+                    <div class="role-header" onclick="toggleRole(this)">
+                        <span>Monteur Vidéo</span>
+                        <div class="expand-btn">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="role-content">
+                        <p>Un Monteur Vidéo transforme les séquences brutes en récits visuels captivants qui séduisent et engagent les spectateurs. <br>
+                            Avec un œil attentif aux détails et une maîtrise des techniques de montage, il crée des vidéos fluides et de haute qualité qui donnent vie aux idées et laissent un impact durable.</p>
+                        <a href="#" class="btn btn-secondary">En savoir plus</a>
+                    </div>
+                </div>
+                
+                <div class="role-item">
+                    <div class="role-header" onclick="toggleRole(this)">
+                        <span>Designer</span>
+                        <div class="expand-btn">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="role-content">
+                        <p>Un Designer allie créativité et stratégie pour concevoir des designs visuellement impressionnants et percutants qui communiquent efficacement les idées. <br>
+                            Avec un œil affûté pour l'esthétique et l'expérience utilisateur, il crée des visuels attrayants qui élèvent les marques et captivent les audiences.</p>
+                        <a href="#" class="btn btn-secondary">En savoir plus</a>
+                    </div>
+                </div>
+                
+                <div class="role-item">
+                    <div class="role-header" onclick="toggleRole(this)">
+                        <span>Développeur web</span>
+                        <div class="expand-btn">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="role-content">
+                        <p>Un Développeur Web crée des sites web dynamiques et performants qui allient fonctionnalité et expérience utilisateur fluide. <br>
+                            Avec une expertise en technologies front-end et back-end, il construit des solutions évolutives et réactives qui favorisent l'engagement et la croissance de l'entreprise.</p>
+                        <a href="#" class="btn btn-secondary">En savoir plus</a>
+                    </div>
+                </div>
+                
+                <div class="role-item">
+                    <div class="role-header" onclick="toggleRole(this)">
+                        <span>Développeur front-end</span>
+                        <div class="expand-btn">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="role-content">
+                        <p>Un Développeur Front-End allie créativité et expertise technique pour concevoir des expériences numériques fluides et conviviales qui captivent et engagent les utilisateurs. <br>
+
+                            Avec un œil affûté pour le design et une maîtrise des technologies web modernes, il transforme des idées complexes en sites web et applications interactives et performantes qui favorisent le succès de l'entreprise.</p>
+                        <a href="#" class="btn btn-secondary">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="collaboration-section-roles">
+    <div class="container">
+        <h2>Prêt à collaborer ?</h2>
+        <p>Nous vous trouvons des employés à distance exceptionnels pour jusqu'à 80 % de moins.</p>
+        <div class="btn-wrapper">
+            <a href="Contact.html" class="btn btn-primary">Commencer</a>
+            <img src="src/assetes/Frame 80.png" alt="Stars" class="btn-stars">
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="src/assetes/third sky blue.svg" alt="ELEVATION Logo">
+            </div>
+            
+            <div class="footer-contact">
+                <p><i class="fas fa-map-marker-alt"></i> 345 Faulconer Drive, Suite 4 · Charlottesville, CA, 12345</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+            </div>
+        
+            <!--<div class="footer-social">
+                <span>Social Media</span>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fas fa-rss"></i></a>
+                </div>-->
+            </div>
+        </div>
+        
+        <div class="footer-links">
+            <a href="roles.html">NOS SERVICES</a>
+            <a href="about.html">NOTRE HISTOIRE</a>
+            <!--<a href="blogs.html">BLOG</a>-->
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; Copyright © 2018 • Lift Media Inc.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Toggle role details
+    function toggleRole(element) {
+        const roleItem = element.closest('.role-item');
+        const roleContent = roleItem.querySelector('.role-content');
+        const expandBtn = roleItem.querySelector('.expand-btn i');
+        
+        // Close all other open roles
+        document.querySelectorAll('.role-content.active').forEach(item => {
+            if (item !== roleContent) {
+                item.classList.remove('active');
+                item.style.maxHeight = null;
+                const otherBtn = item.closest('.role-item').querySelector('.expand-btn i');
+                otherBtn.classList.remove('fa-minus');
+                otherBtn.classList.add('fa-plus');
+            }
+        });
+        
+        // Toggle current role
+        if (roleContent.classList.contains('active')) {
+            roleContent.classList.remove('active');
+            roleContent.style.maxHeight = null;
+            expandBtn.classList.remove('fa-minus');
+            expandBtn.classList.add('fa-plus');
+        } else {
+            roleContent.classList.add('active');
+            roleContent.style.maxHeight = roleContent.scrollHeight + 'px';
+            expandBtn.classList.remove('fa-plus');
+            expandBtn.classList.add('fa-minus');
+        }
+    }
+    
+    // Mobile menu toggle
+    document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+        document.querySelector('.nav-links').classList.toggle('active');
+    });
+</script>
+</body>
+</html>

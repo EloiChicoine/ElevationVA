@@ -1,0 +1,171 @@
+
+.team-section {
+    padding: 100px 0;
+    position: relative;
+    padding-bottom: 160px;
+    background: linear-gradient(135deg, #1C2B40 0%, #203450 100%);
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    color: white; /* Change text color to white for better contrast */
+    height: 300px;
+}
+
+.team-section h2{
+    color: white;
+    text-align: center; 
+
+}
+/* Swiper Container */
+.team-swiper {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: visible;
+    height: 280px;
+}
+
+/* Team Member Card */
+
+.team-member {
+    background-color: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    height: 130%;
+    display: flex;
+    flex-direction: column;
+}
+
+.member-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.member-title {
+    font-weight: 300;
+    color: #22bceb;
+    margin-bottom: 15px;
+}
+
+.member-bio {
+    color: #494848;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+/* Navigation Arrows */
+
+.team-prev,
+.team-next {
+    width: 40px;
+    height: 40px;
+    color: white !important;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    z-index: 10;
+    margin: 0;
+}
+
+/* Left Arrow (Prev) */
+.team-prev {
+    left: calc(50% - 700px) !important;
+}
+
+/* Right Arrow (Next) */
+.team-next {
+    right: calc(50% - 700px) !important;
+}
+
+/* Hover effect */
+.team-prev:hover,
+.team-next:hover {
+    transform: scale(1.1) translateY(-50%);
+}
+
+.team-prev::after,
+.team-next::after {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+/* Pagination Dots */
+.team-pagination {
+    height: 50px;
+    position: absolute !important;
+    top: 540px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: 10 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.team-pagination .swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    background: rgba(0, 132, 255, 0.5) !important;
+    opacity: 1 !important;
+    margin: 0 5px !important;
+}
+
+/* Active Bullet Style */
+.team-pagination .swiper-pagination-bullet-active {
+    background: var(--primary-color) !important;
+    transform: scale(1.2) !important;
+}
+
+.swiper-slide {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .swiper-slide {
+        height: auto !important;
+    }
+    .member-bio{
+        font-size:13px;
+    }
+    .team-member {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .team-prev {
+        left: 10px !important;
+        bottom: 10px;
+    }
+    
+    .team-next {
+        right: 10px !important;
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-prev,
+    .team-next {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .team-prev {
+        left: 5px !important;
+        bottom: 5px;
+    }
+    
+    .team-next {
+        right: 5px !important;
+        bottom: 5px;
+    }
+}
+

@@ -1,0 +1,17 @@
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color:#3498db ;
+}
+.btn-outline {
+    border: 1px solid #fff;
+    color: #ffffff;
+}
+
+.elevation-nav .btn {
+    color: #ffffff;
+}

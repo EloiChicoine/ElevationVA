@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KL4659TG');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Contact - ELEVATION</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styling/button.css">
+    <link rel="icon" type="image/png" href="src/assetes/icon1.png">
+    <style>
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+        .alert-success {
+            color: #3c763d;
+            background-color: #dff0d8;
+            border-color: #d6e9c6;
+        }
+        .alert-danger {
+            color: #a94442;
+            background-color: #f2dede;
+            border-color: #ebccd1;
+        }
+        #success {
+            margin-bottom: 20px;
+        }
+    </style>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+	</script>
+
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KL4659TG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+<header class="Nav-contact">
+    <nav class="elevation-nav">
+        <div class="logo">
+            <a href="index.html">
+            <img src="src/assetes/Layer 1.png" alt="ELEVATION">
+        </div>
+        <ul class="nav-links">
+            <li><a href="roles.html">Nos services</a></li>
+            <li><a href="about.html">Notre histoire</a></li>
+            
+        </ul>
+        <a href="#hiring" class="btn btn-outline" >Commencer</a>
+    </nav>
+</header>
+
+
+<section class="contact-form-section">
+    <div class="container">
+        <h2>Prêt à nous contacter ?</h2>
+        <div id="success"></div>
+        <form class="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Nom complet*</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Numéro de téléphone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="company">Entreprise</label>
+                    <input type="text" id="company" name="company">
+                </div>
+            </div>
+            
+            <div class="form-group full-width">
+                <label for="message">Message*</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <div class="form-text">
+                <p>Nous trouvons les meilleurs talents à l'étranger pour vous aider à faire évoluer votre entreprise.</p>
+                <p><small>* Champs obligatoires</small></p>
+            </div>
+            
+            <div class="form-submit">
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="process-section-contact">
+    <div class="container">
+        <div class="process-title">
+            <h2>
+                Comment ça marche
+            </h2>
+        </div>
+        
+        <div class="process-list">
+            <!-- Step 1 -->
+            <div class="process-item-contact" onclick="toggleStep(1)">
+                <span>1. Déterminez votre recrutement en toute simplicité</span>
+                <i class="arrow-icon" id="icon1">></i>
+            </div>
+            <div class="process-content" id="content1">
+                <p>Cliquez sur le bouton « Commencer l'embauche » et dites-nous quels sont vos besoins.</p>
+            </div>
+    
+            <!-- Step 2 -->
+            <div class="process-item-contact" onclick="toggleStep(2)">
+                <span>2. Nous trouvons le candidat parfait</span>
+                <i class="arrow-icon" id="icon2">></i>
+            </div>
+            <div class="process-content" id="content2">
+                <p>Nous lançons la recherche de talents pour votre poste spécifique. Nous menons les entrevues et sélectionnons les meilleurs candidats jusqu'à trouver celui qui correspond parfaitement à vos attentes.</p>
+            </div>
+    
+            <!-- Step 3 -->
+            <div class="process-item-contact" onclick="toggleStep(3)">
+                <span>3. Rencontrez votre nouvel assistant virtuel</span>
+                <i class="arrow-icon" id="icon3">></i>
+            </div>
+            <div class="process-content" id="content3">
+                <p>Une fois que nous avons identifié la meilleure option pour vous, nous vous la présentons et lançons le processus d'intégration.</p>
+            </div>
+    
+            <!-- Step 4 -->
+            <div class="process-item-contact" onclick="toggleStep(4)">
+                <span>4. Intégration facile et accompagnement continu</span>
+                <i class="arrow-icon" id="icon4">></i>
+            </div>
+            <div class="process-content" id="content4">
+                <p>Après avoir trouvé le candidat idéal, pas de frais exorbitants à payer. Nous vous aidons à intégrer votre nouvel employé jour après jour, mois après mois. Vous évitez les complications des paiements internationaux : on s'occupe de tout. Simple, efficace et pratique.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="src/assetes/third sky blue 1.png" alt="ELEVATION Logo">
+
+            </div>
+            
+            <div class="footer-contact">
+                <p><i class="fas fa-map-marker-alt"></i> 345 Faulconer Drive, Suite 4 · Charlottesville, CA, 12345</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+            </div>
+            
+           <!-- Step 4  <div class="footer-social">
+                <span>Social Media</span>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fas fa-rss"></i></a>
+                </div> -->
+            </div>
+        </div>
+        
+        <div class="footer-links">
+            <a href="roles.html">NOS SERVICES</a>
+            <a href="about.html">NOTRE HISTOIRE</a>
+            <!--<a href="blogs.html">BLOG</a>-->
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; Copyright © 2018 • Lift Media Inc.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Initialize EmailJS
+    (function() {
+        emailjs.init("SuV5EkTr2WBBcXHiw");
+    })();
+    
+    // Toggle process steps
+    function toggleStep(step) {
+        let content = document.getElementById("content" + step);
+        let icon = document.getElementById("icon" + step);
+
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            content.style.padding = "0 20px";
+            icon.style.transform = "rotate(0deg)"; // Reset arrow
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            content.style.padding = "10px 20px";
+            icon.style.transform = "rotate(90deg)"; // Rotate arrow
+        }
+    }
+</script>
+<script src="contact_me.js"></script>
+</body>
+</html>

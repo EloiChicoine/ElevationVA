@@ -1,0 +1,13 @@
+.collaboration-section {
+    background-color: #f5f5f5;
+    padding: 80px 0;
+    text-align: center;
+}
+
+@media (max-width: 450px) {
+    .section-heading {
+        font-size: 1px !important;
+      
+    }
+}
+
